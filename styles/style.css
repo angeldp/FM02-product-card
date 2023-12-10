@@ -1,0 +1,197 @@
+/* Custom propierties */
+:root{
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+*{box-sizing:border-box;}
+.invisible:not(:focus){
+    position:absolute;
+     width:1px;
+     height:1px;
+     padding:0;
+     border-width:0;
+     overflow:hidden;
+     margin:-1px;
+     clip-path:inset(100%);
+     clip:rect(0 0 0 0);
+     white-wrap:nowrap;
+   }
+
+body{
+    color:var(--darkGrayishBlue);
+    font-size:14px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: var(--cream);
+    margin:0;
+}
+article{
+    background-color: var(--white);
+    width:90vw;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    overflow:hidden;
+    margin:2rem auto ;
+    display: flex;
+    flex-direction: column;
+}
+picture>img{
+    width:100%;
+    height: 100%;
+}
+article>div{
+    padding: 1.35rem;
+    box-sizing: border-box;
+}
+p.cat{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 70%;
+    margin: 0;
+}
+h1{
+    font-size: 200%;
+    color:var(--veryDarkBlue);
+    margin:.75rem 0;
+    line-height: 1.75rem;
+}
+p.desc{
+    font-size:100%;
+    line-height: 1.25rem;
+}
+p.price{
+    display: flex;
+    gap:1.5rem;
+    align-items:center;
+}
+
+article>div>h1,
+article>div>.price>ins{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+ins.new{
+    color:var(--darkCyan);
+    text-decoration: none;
+    font-size: 210%;
+}
+del.old{
+    font-size: 80%;
+}
+button{
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 90%;
+    background-color: var(--darkCyan);
+    color:var(--white);
+    display: flex;
+    width:100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 1ex;
+    justify-content: center;
+    align-items: center;
+    gap:.7rem;
+    cursor:pointer;
+}
+button:hover, button:focus{
+    background-color: var(--veryDarkBlue);
+}
+span.buy{
+    font-size:130%;
+}
+
+
+
+
+
+@media all and (min-width:476px){
+    body{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    article{
+        flex-direction: row;
+        max-width:500px;
+    }
+    article>picture,
+    article>div{
+        flex:1 1 50%;
+    }
+    article>div{
+        padding: 1.65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    p.cat{
+        font-size: 60%;
+    }
+    h1{
+        font-size: 190%;
+    }
+    p.desc{
+        font-size:85%;
+        line-height: 1.15rem;
+    }
+    p.price{
+        gap:1rem;
+    }
+    ins.new{
+        font-size: 195%;
+    }
+    button{
+        padding: .75rem;
+        gap:.5rem;
+        font-size: 80%;
+
+    }
+
+
+
+}
+
+
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+
+### Neutral
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>*/
+
