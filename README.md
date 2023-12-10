@@ -28,8 +28,8 @@ CSS with Flex and custom propierties
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/angeldp/FM02-product-card](https://github.com/angeldp/FM02-product-card)
+- Live Site URL: [https://angeldp.github.io/FM02-product-card/](https://angeldp.github.io/FM02-product-card/)
 
 ## My process
 
